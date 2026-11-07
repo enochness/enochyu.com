@@ -1,32 +1,9 @@
 <footer class="footer">
   <div>
     <div id="view-count">Total Visits: Loading...</div>
-    <div id="footer-day">Last Updated: 7 October 2026</div>
     <a href="https://github.com/enochyu-official" target="_blank" rel="noopener noreferrer">
       &copy; {{ now.Year }} {{ .Site.Params.author }}. All Rights Reserved.
     </a>
   </div>
-
-  <script>
-    MathJax = {
-      options: {
-        menuOptions: {
-          settings: {
-            enrich: false,
-            collapsible: false,
-            speech: false,
-            braille: false,
-            assistiveMml: false,
-          }
-        }
-      },
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['\\[', '\\]'], ['$$', '$$']]
-      },
-      svg: { fontCache: 'global' }
-    };
-  </script>
-  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
 </footer>
 

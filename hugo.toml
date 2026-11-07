@@ -12,7 +12,6 @@ favicon = "/img/favicon/favicon.ico"
     youtube = "https://www.youtube.com/@enochyu_official"
     github = "https://github.com/enochyu-official"
     blog = "https://blog.enochyu.com/"
-    archive = "https://archive.enochyu.com/"
 
 [security]
   allowContent = ['^text/html$']

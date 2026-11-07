@@ -39,6 +39,10 @@
   margin-bottom: 10px;
 }
 
+#profile-date {
+  margin-top: 15px;
+}
+
 #profile-description {
   font-size: 16px;
   opacity: 0.9;
@@ -47,8 +51,9 @@
 #social-icons {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.2rem;
+  gap: 1.5rem;
   align-items: center;
+  justify-content: center;
 }
 
 #social-icons a {
