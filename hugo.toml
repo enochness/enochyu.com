@@ -9,8 +9,8 @@ disableKinds = ["section", "taxonomy"]
 author = "Enoch Yu"
 favicon = "/img/favicon/favicon.ico"
   [params.social]
-    youtube = "https://www.youtube.com/@enochyu_official"
-    github = "https://github.com/enochyu-official"
+    youtube = "https://www.youtube.com/@enochness"
+    github = "https://github.com/enochness"
     blog = "https://blog.enochyu.com/"
 
 [security]
