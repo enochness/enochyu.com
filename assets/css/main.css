@@ -9,7 +9,7 @@
   --bg-color2: #F5F5F5;
   --accent-color: #880808;
   --text-dark: #1B1212;
-  --transition: all 0.3s ease;
+  --text-gray: #333333;
 }
 
 body {
@@ -17,12 +17,8 @@ body {
   line-height: 1.6;
   color: var(--text-dark);
   background-color: var(--bg-color);
-}
-
-p, a, ul, div, h1, h2, h3, h4 {
-  user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none;
+  user-select: none;
 }
 
 a {
@@ -33,10 +29,4 @@ a:hover {
   text-decoration: underline;
 }
 
-.footer {
-  background: rgba(28, 28, 30, 0.95);
-  color: #D3D3D3 !important;
-  text-align: center;
-  padding: 1.7rem;
-}
 

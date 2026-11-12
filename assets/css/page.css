@@ -35,7 +35,6 @@ hr.styled-hr::after {
 .index-current {
   width: 90vw;
   margin: 1rem auto;
-  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,21 +42,13 @@ hr.styled-hr::after {
 .index-current p {
   width: 90%;
   font-size: 1rem;
-  margin: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 .index-current ul {
   font-size: 1rem;
   padding-left: 2rem;
   margin-bottom: 1rem;
   align-self: flex-start;
-}
-#index-current-iam {
-  margin-bottom: 0.2rem !important;
-}
-
-.resume-title {
-  margin-top: 1.0rem;
 }
 
 @media (min-width: 1024px) {
@@ -71,7 +62,6 @@ hr.styled-hr::after {
 
   .index-current p {
     font-size: 1.2rem;
-    margin: 0 0 12px;
   }
 
   .index-current ul {
@@ -104,10 +94,15 @@ body:has(.error-page) main {
 }
 .error-page p {
   font-size: 2.1rem;
-  font-weight: 400;
 }
 .error-page a {
   font-size: 1.7rem;
-  font-weight: 400;
+}
+
+.footer {
+  background: rgba(28, 28, 30, 0.95);
+  color: #D3D3D3;
+  text-align: center;
+  padding: 1.2rem;
 }
 

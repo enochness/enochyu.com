@@ -14,7 +14,6 @@ if (viewCountEl) {
     })
     .catch(error => {
       console.error('Error fetching view count:', error);
-      viewCountEl.classList.add('error');
       viewCountEl.textContent = `Error (${error.message}) visits`;
     });
 }

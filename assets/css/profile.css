@@ -4,8 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 30vw;
-  margin: 4rem auto;
-  margin-top: 2.5rem;
+  margin: 2.5rem auto 4rem;
 }
 
 #profile-image {
@@ -51,17 +50,17 @@
   width: 2.5rem;
   height: 2.5rem;
   font-size: 1.2rem;
-  border: 1px solid #333333;
+  border: 1px solid var(--text-gray);
   border-radius: 50%;
-  background-color: #333333;
+  background-color: var(--text-gray);
   color: var(--bg-color);
-  transition: var(--transition);
+  transition: all 0.3s ease;
   flex: 0 0 auto;
 }
 #social-icons .btn1:hover {
   background-color: transparent;
-  color: #333333;
-  border-color: rgba(128, 128, 128, 1);
+  color: var(--text-gray);
+  border-color: #808080;
 }
 #social-icons a:hover {
   text-decoration: none;
