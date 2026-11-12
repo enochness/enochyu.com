@@ -56,6 +56,7 @@ function fitCovers() {
       const text = item.querySelector('.resume-item-text');
       const img = cover.querySelector('img');
       const ratio = img.getAttribute('width') / img.getAttribute('height');
+      cover.style.marginTop = '';
       let w = cover.offsetWidth;
       for (let i = 0; i < 3; i++) {
         w = Math.min(coverHeight(item, text) * ratio, item.clientWidth * 0.35);
@@ -64,7 +65,13 @@ function fitCovers() {
       width = Math.min(width, w);
     });
     items.forEach(item => {
-      item.querySelector('.resume-cover').style.width = width + 'px';
+      const cover = item.querySelector('.resume-cover');
+      cover.style.width = width + 'px';
+      if (item.dataset.fitLines !== undefined) {
+        const text = item.querySelector('.resume-item-text');
+        const gap = coverHeight(item, text) - cover.offsetHeight;
+        if (gap > 0) cover.style.marginTop = gap / 2 + 'px';
+      }
     });
   });
 }

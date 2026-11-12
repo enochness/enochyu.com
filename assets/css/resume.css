@@ -6,22 +6,6 @@
   align-items: center;
 }
 
-.resume-section-content p {
-  max-width: 80vw;
-  padding: 2rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-@media (min-width: 1024px) {
-  .resume-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
-}
-
 .resume-section:nth-child(odd) {
   background-color: var(--bg-color2);
 }
@@ -98,21 +82,11 @@
   .resume-container {
     width: 90vw;
   }
-
-  .content-section {
-    flex-direction: column;
-  }
-  
-  .resume-container h2::before,
-  .resume-container h2::after {
-    width: calc(50% - 60px);
-  }
 }
 
 .resume-card h4 {
   margin-bottom: 0.1rem;
 }
-
 
 .resume-item.with-cover {
   display: flex;
@@ -144,9 +118,14 @@
 
 .resume-item.with-cover[data-fit-lines] .resume-cover {
   float: left;
-  margin: 0 1.2rem 0 0;
+  margin-right: 0.8rem;
 }
 
 .resume-item.with-cover[data-fit-lines] .resume-item-text {
   display: block;
 }
+
+.resume-cover.logo {
+  max-width: 7rem;
+}
+

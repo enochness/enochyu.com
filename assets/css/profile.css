@@ -15,12 +15,10 @@
   width: 100%;
   height: 100%;
 }
-
 #profile-image img {
   width: 230px;
   height: 230px;
   border-radius: 50%;
-  border: 5px solid var(--border-color);
   object-fit: cover;
 }
 
@@ -51,37 +49,29 @@
   align-items: center;
   justify-content: center;
 }
-
-#social-icons a,
-#social-icons button {
+#social-icons .btn1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  border: none;
+  font-size: 1.2rem;
+  border: 1px solid #333333;
   border-radius: 50%;
   background-color: #333333;
   color: var(--bg-color);
-  font-size: 1.35rem;
+  transition: var(--transition);
   flex: 0 0 auto;
 }
-#social-icons a.icon-github {
+#social-icons .btn1:hover {
   background-color: transparent;
   color: #333333;
-  font-size: 2.55rem;
+  border-color: rgba(128, 128, 128, 1);
 }
-
-@media (max-width: 1023px) {
-  .profile-section {
-    flex-direction: column;
-    width: 80vw;
-    gap: 2rem;
-  }
+#social-icons a:hover {
+  text-decoration: none;
 }
-
 #social-icons button {
-  padding: 0;
   cursor: pointer;
 }
 
@@ -121,3 +111,12 @@
     transition: none;
   }
 }
+@media (max-width: 1023px) {
+  .profile-section {
+    flex-direction: column;
+    width: 80vw;
+    gap: 2rem;
+  }
+}
+
+

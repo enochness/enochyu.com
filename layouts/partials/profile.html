@@ -10,23 +10,23 @@
       <div id="social-icons">
         {{ with .Site.Params.social.youtube }}
         <a href="{{ . }}" target="_blank" rel="noopener"
-           aria-label="YouTube">
+           class="btn1" aria-label="YouTube">
           <i class="fab fa-youtube"></i>
         </a>
         {{ end }}
         {{ with .Site.Params.social.github }}
         <a href="{{ . }}" target="_blank" rel="noopener"
-           class="icon-github" aria-label="GitHub">
+           class="btn1" aria-label="GitHub">
           <i class="fab fa-github"></i>
         </a>
         {{ end }}
         {{ with .Site.Params.social.blog }}
         <a href="{{ . }}" target="_blank" rel="noopener"
-           aria-label="Blog">
+           class="btn1" aria-label="Blog">
           <i class="fa-solid fa-blog"></i>
         </a>
         {{ end }}
-        <button type="button" aria-expanded="false"
+        <button type="button" class="btn1" aria-expanded="false"
                 aria-controls="email-reveal" id="reveal-email"
                 aria-label="Click to reveal" title="Click to reveal">
           <i class="fa-solid fa-envelope"></i>
