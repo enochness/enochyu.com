@@ -22,7 +22,7 @@
   }
 }
 
-.resume-section:nth-child(even) {
+.resume-section:nth-child(odd) {
   background-color: var(--bg-color2);
 }
 
