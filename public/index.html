@@ -19,7 +19,7 @@
 <link rel="canonical" href="https://enochyu.com/" />
 
 
-<link rel="stylesheet" href="/css/bundle.min.b5792f0f001b173bb834efc706821d0bb74709ebf0d8bb1badc03d01075baff7.css" integrity="sha256-tXkvDwAbFzu4NO/HBoIdC7dHCevw2LsbrcA9AQdbr/c=">
+<link rel="stylesheet" href="/css/bundle.min.b32346b8f025f4b3b1afbe4879b4767349ea56e411c63de9dd0176c95355f38a.css" integrity="sha256-syNGuPAl9LOxr75IebR2c0nqVuQRxj3p3QF2yVNV84o=">
 
 <script type="application/ld+json">
 {
@@ -38,7 +38,7 @@
     
   <section class="profile-section">
   <div id="profile-image">
-    <img src="/profile.jpg" alt="profile">
+    <img src="/img/profile.jpg" alt="profile">
   </div>
 
   <div class="profile-info">
@@ -86,29 +86,24 @@
   <hr class="styled-hr">
   <br>
   <section class="index-current">
-  <p>
-    Hi! I am Enoch Yu, a high school junior in South Korea.
-    I retain keen interests in numerous fields including pure math,
-    machine learning, and quantitative finance.
-  </p>
   <p id="index-current-iam">
-    Currently I am...
+    Hi! I am Enoch Yu, a high school junior in South Korea.
+    I retain keen interest in mathematics and machine learning,
+    and I hope to study math in college. To help you imagine
+    what I am doing right now, I am probably learning, having fun,
+    or sleeping. More specifically, I am...
   </p>
   <ul>
     <li>
-      Preparing for the upcoming national math olympiad
-    </li>
-    <li>
       Contributing to
       <a href="https://librenotebook.enochyu.com">LibreNotebook</a>
+      and <a href="https://nanumlearn.org/">Nanum Learn</a>
     </li>
     <li>
-      Studying a specific transformer architecture
+      Studying looped transformers and stable diffusion
     </li>
     <li>
-      Running <a href="https://nanumlearn.org/"
-                 target="_blank" rel="noopener noreferrer">
-        Nanum Learn</a>
+      Figuring out why Einspänners are just perfect
     </li>
     <li>
       Configuring my setup for the infinite productivity loop
@@ -190,7 +185,11 @@
     <div class="resume-card">
       <h2>2026</h2>
       <hr>
-      <div class="resume-item"> 
+      <div class="resume-item with-cover">
+        <div class="resume-cover">
+          <img src="/img/librenotebook.png" width="1410" height="2250" alt="LibreNotebook cover">
+        </div>
+        <div class="resume-item-text">
         <h3>LibreNotebook
         <span class="project-title-link">
           (<a href="https://librenotebook.enochyu.com">Read More</a>)
@@ -207,9 +206,14 @@
         <a href="https://librenotebook.enochyu.com">web</a> version
         are available.
         </p>
+        </div>
       </div>
 
-      <div class="resume-item"> 
+      <div class="resume-item with-cover">
+        <div class="resume-cover">
+          <img src="/img/linear-algebra.png" width="444" height="666" alt="Introduction to Linear Algebra cover">
+        </div>
+        <div class="resume-item-text">
         <h3>Enoch's Notebook: An Introduction to Linear Algebra
         <span class="project-title-link">
           (<a href="https://github.com/enochness/notebook-linear-algebra">Read More</a>)
@@ -223,6 +227,7 @@
         with <a href="https://archive.enochyu.com/a/pdf/A26101.pdf">free PDF</a>
         and <a href="https://www.amazon.com/dp/B0HFKWJSGK">Amazon</a>.
         </p>
+        </div>
       </div>
     </div>
   </div>
@@ -234,24 +239,30 @@
     <div class="resume-card">
       <h2>Leadership</h2>
       <hr>
-      <div class="resume-item">
+      <div class="resume-item with-cover" data-fit-lines="0">
+        <div class="resume-cover">
+          <img src="/img/nanumlearn-logo.svg" width="750" height="274" alt="Nanum Learn logo">
+        </div>
+        <div class="resume-item-text">
         <h3>Nanum Learn</h3>
         <h4>Aug 2026 - PRESENT &bull; Founder &amp; President</h4>
         <p>
         Nanum Learn is an educational initiative that aims to accelerate
         open learning by providing original and accessible resources
-        such as books, classes, and handouts with permissive license.
-        The official website is hosted in
-        <a href="https://nanumlearn.org/">nanumlearn.org</a>.
+        such as books, classes, and handouts under permissive license.
+        Please visit <a href="https://nanumlearn.org/">nanumlearn.org</a>
+        for more information.
         </p>
+        </div>
       </div>
       <div class="resume-item">
         <h3>ChungManHan Holy Phil Orchestra</h3>
         <h4>Jan 2017 - PRESENT &bull; Concertmaster</h4>
         <p>
-        ChungManHan Holy Phil Orchestra is a church orchestra comprising
-        over 100 members. As the concertmaster of the orchestra, I serve as
-        the primary assistance of the conductor and leader of First Violin.
+          ChungManHan Holy Phil Orchestra is a church orchestra
+          comprising over 100 members. As the concertmaster of the
+          orchestra, I serve as the primary assistance of the conductor
+          and leader of First Violin.
         </p>
       </div>
       <br>
@@ -261,9 +272,9 @@
         <h3>DNA Math Academy</h3>
         <h4>Jun 2024 - Seasonal &bull; Instructor</h4>
         <p>
-        To share the beauty of math, I occasionally tutor math in DNA Math
-        Academy in South Korea. Moreover, I quarterly lead sessions for math
-        competitions and Olympiads such as AMC and national Olympiads.
+          I occasionally tutor math in DNA Math Academy in South Korea.
+          Previously, I quarterly lead sessions for math competitions
+          and Olympiads such as AMC and national Olympiads.
         </p>
       </div>
     </div>
@@ -284,13 +295,10 @@
         </h3>
         <h4>YouTube videos explaining 100 math olympiad problems</h4>
         <p>
-        As the name suggests, the project contains 100
-        problems from diverse sources, where I made a video
-        for the problems. The playlist to the explanation
-        videos are available
-        <a href="https://www.youtube.com/playlist?list=PLOs3MhwbOdVyy102FYycVmbeHPPwO4Des"
-           target="_blank" rel="noopener noreferrer">
-          here!</a>
+        As the name suggests, the project contains 100 problems from
+        diverse sources, where I made video explanations for the problems.
+        The playlist to the explanation videos are available
+        <a href="https://www.youtube.com/playlist?list=PLOs3MhwbOdVyy102FYycVmbeHPPwO4Des" target="_blank" rel="noopener noreferrer"> here</a>.
         The solutions are mixed works of my personal solutions,
         solutions founded by community, and official solutions.
         </p>
@@ -303,10 +311,11 @@
         <h3>Daygraise</h3>
         <h4>A CLI tool to manage your task and visualize productivity</h4>
         <p>
-        Please visit
-        <a href="https://github.com/enochness/Goodies/tree/main/2026/02_daygraise"
-           target="_blank" rel="noopener noreferrer">
-        here</a> for more information.
+          Daygraise is a productivity tool written in Python.
+          The source files and more information of the project is
+          hosted in
+          <a href="https://github.com/enochness/Goodies/tree/main/2026/02_daygraise" target="_blank" rel="noopener noreferrer">
+          GitHub</a>.
         </p>
       </div>
       <div class="resume-item">
@@ -317,13 +326,10 @@
         </h3>
         <h4>Fun websites that I made while learning web development</h4>
         <p>
-         As an ardent high school sophomore who loves math and
-         programming, I decided to create mini-projects with
-         JavaScript. The purpose of this project is to document
-         my learning journey and to actively engage in learning
-         different programming languages on my own. Total of
-         three mini-projects are created each with detailed
-         explanation, demonstration, and source code.
+          This project is one of my earliest learning project
+          that taught me front-end basics like HTML, CSS, and
+          JavaScript. It is basically a collection of fun websites
+          like Coffee Shops and Guess the Number.
         </p>
       </div>
     </div>

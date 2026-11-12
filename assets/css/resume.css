@@ -113,3 +113,40 @@
   margin-bottom: 0.1rem;
 }
 
+
+.resume-item.with-cover {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.resume-cover {
+  flex: 0 0 auto;
+  width: 6rem;
+  margin-top: 0.4rem;
+}
+
+.resume-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.resume-item-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.resume-item.with-cover[data-fit-lines] {
+  display: flow-root;
+}
+
+.resume-item.with-cover[data-fit-lines] .resume-cover {
+  float: left;
+  margin: 0 1.2rem 0 0;
+}
+
+.resume-item.with-cover[data-fit-lines] .resume-item-text {
+  display: block;
+}
