@@ -82,7 +82,6 @@
   margin: 0;
 }
 
-
 @media (max-width: 1023px) {
   .resume-container h1 {
     font-size: 1.8rem;
@@ -113,5 +112,4 @@
 .resume-card h4 {
   margin-bottom: 0.1rem;
 }
-
 

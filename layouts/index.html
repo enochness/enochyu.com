@@ -4,6 +4,11 @@
   <br>
   {{ partial "current.html" . }}
   {{ partial "resume.html" . }}
-  {{ partial "contact.html" . }}
+  <div class="page-meta">
+    <div class="page-meta-inner">
+      <div>{{ now.Format "2 January 2006" }}</div>
+      <div id="view-count">...</div>
+    </div>
+  </div>
 {{ end }}
 

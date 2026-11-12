@@ -35,8 +35,6 @@ a {
   text-decoration: none;
 }
 
-
-/* footer */
 .footer {
   background: rgba(28, 28, 30, 0.95);
   color: #D3D3D3 !important;
@@ -44,3 +42,20 @@ a {
   padding: 1.7rem;
 }
 
+.page-meta {
+  background-color: var(--bg-color);
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.page-meta-inner {
+  width: 50vw;
+  margin: 0 auto;
+  text-align: right;
+}
+
+@media (max-width: 1023px) {
+  .page-meta-inner {
+    width: 90vw;
+  }
+}

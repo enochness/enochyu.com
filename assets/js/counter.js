@@ -10,12 +10,12 @@ if (viewCountEl) {
     })
     .then(data => {
       if (data.error) throw new Error(data.error);
-      viewCountEl.textContent = `Total Visits: ${data.count}`;
+      viewCountEl.textContent = `${data.count} visits`;
     })
     .catch(error => {
       console.error('Error fetching view count:', error);
       viewCountEl.classList.add('error');
-      viewCountEl.textContent = `Total Visits: Error (${error.message})`;
+      viewCountEl.textContent = `Error (${error.message}) visits`;
     });
 }
 

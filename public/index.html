@@ -19,7 +19,7 @@
 <link rel="canonical" href="https://enochyu.com/" />
 
 
-<link rel="stylesheet" href="/css/bundle.min.fdf7bded074b4473a18c07ee72164e5780f4c48697795b3b65c8b80e344b79cc.css" integrity="sha256-/fe97QdLRHOhjAfuchZOV4D0xIaXeVs7Zci4DjRLecw=">
+<link rel="stylesheet" href="/css/bundle.min.b5792f0f001b173bb834efc706821d0bb74709ebf0d8bb1badc03d01075baff7.css" integrity="sha256-tXkvDwAbFzu4NO/HBoIdC7dHCevw2LsbrcA9AQdbr/c=">
 
 <script type="application/ld+json">
 {
@@ -43,8 +43,7 @@
 
   <div class="profile-info">
     <h1 id="profile-name">Enoch Yu</h1>
-    <p id="profile-description">
-    </p>
+    <p id="profile-description"></p>
     <div>
       <div id="social-icons">
         
@@ -55,7 +54,7 @@
         
         
         <a href="https://github.com/enochness" target="_blank" rel="noopener"
-           aria-label="GitHub">
+           class="icon-github" aria-label="GitHub">
           <i class="fab fa-github"></i>
         </a>
         
@@ -65,8 +64,20 @@
           <i class="fa-solid fa-blog"></i>
         </a>
         
+        <button type="button" aria-expanded="false"
+                aria-controls="email-reveal" id="reveal-email"
+                aria-label="Click to reveal" title="Click to reveal">
+          <i class="fa-solid fa-envelope"></i>
+        </button>
       </div>
-      <div id="profile-date">Last Updated: 10 November 2026</div>
+      <div id="email-reveal">
+        <div class="email-reveal-inner">
+          <div class="email-reveal-content">
+            <div>enoch [at] enochyu [dot] com</div>
+            <div>In case of an emergency, call 911</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -185,9 +196,9 @@
           (<a href="https://librenotebook.enochyu.com">Read More</a>)
         </span> 
         </h3>
-        <h4>Giant and free notebook</h4>
+        <h4>Giant and open source notebook</h4>
         <p>
-        LibreNotebook is Enoch Yu's giant and free personal notebook.
+        LibreNotebook is Enoch Yu's giant and open source notebook.
         The purpose is to inspire and accelerate open education as a
         way of returning the blessings that I received from public
         educational resources.
@@ -248,7 +259,7 @@
       <hr>
       <div class="resume-item">
         <h3>DNA Math Academy</h3>
-        <h4>Jun 2024 - PRESENT &bull; Instructor</h4>
+        <h4>Jun 2024 - Seasonal &bull; Instructor</h4>
         <p>
         To share the beauty of math, I occasionally tutor math in DNA Math
         Academy in South Korea. Moreover, I quarterly lead sessions for math
@@ -321,42 +332,17 @@
 
 
 
-  <section class="resume-section">
-  <div class="contact-content">
-    <h2 class="resume-title" id="contact">Contact</h2>
-
-    <form action="https://api.web3forms.com/submit" method="POST" class="form-group">
-      <input type="hidden" name="access_key" value="f7db8f47-7025-441a-887f-b9c0a354dad5">
-      <input type="hidden" name="from_name" value="Enoch Yu Contact Form">
-      <input type="hidden" name="redirect" value="https://web3forms.com/success">
-      <input type="checkbox" name="botcheck" id="" style="display: none;">
-      
-      <label for="name">Name</label>
-      <input type="text" name="name" placeholder="Name" required>
-
-      <label for="email">Email Address</label>
-      <input type="email" name="email" placeholder="Email Address" required>
-
-      <label for="subject">Subject</label>
-      <input type="text" name="Email Subject" placeholder="Subject" required>
-
-      <label for="message">Message</label>
-      <textarea name="message" cols="30" rows="10" placeholder="..." required></textarea>
-      <button type="submit" class="btn1" id="btn-contact">
-        Send <i class="fa-solid fa-paper-plane"></i>
-      </button>
-    </form>
+  <div class="page-meta">
+    <div class="page-meta-inner">
+      <div>12 November 2026</div>
+      <div id="view-count">...</div>
+    </div>
   </div>
-</section>
-
-
-
 
   </main>
   
   <footer class="footer">
   <div>
-    <div id="view-count">Total Visits: Loading...</div>
     <div>&copy; 2026 Enoch Yu. All Rights Reserved.</div>
   </div>
 </footer>
@@ -366,6 +352,6 @@
   
   <script src="/js/script.js"></script>
   
-  <script src="https://enochyu.com/js/counter.js"></script>
+  <script src="/js/counter.js"></script>
 </body>
 </html>

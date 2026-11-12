@@ -39,10 +39,6 @@
   margin-bottom: 10px;
 }
 
-#profile-date {
-  margin-top: 15px;
-}
-
 #profile-description {
   font-size: 16px;
   opacity: 0.9;
@@ -51,20 +47,29 @@
 #social-icons {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 0.35rem;
   align-items: center;
   justify-content: center;
 }
 
-#social-icons a {
-  color: inherit;
-  font-size: 24px;
-  transition: transform 0.3s;
+#social-icons a,
+#social-icons button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #333333;
+  color: var(--bg-color);
+  font-size: 1.35rem;
   flex: 0 0 auto;
 }
-
-#social-icons a:hover {
-  transform: translateY(-3px);
+#social-icons a.icon-github {
+  background-color: transparent;
+  color: #333333;
+  font-size: 2.55rem;
 }
 
 @media (max-width: 1023px) {
@@ -75,3 +80,44 @@
   }
 }
 
+#social-icons button {
+  padding: 0;
+  cursor: pointer;
+}
+
+#email-reveal {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+  text-align: left;
+  line-height: 1.4;
+}
+
+#email-reveal.open {
+  grid-template-rows: 1fr;
+}
+
+.email-reveal-inner {
+  overflow: hidden;
+  min-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+#email-reveal.open .email-reveal-inner {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease, visibility 0s;
+}
+
+.email-reveal-content {
+  padding-top: 15px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #email-reveal,
+  .email-reveal-inner {
+    transition: none;
+  }
+}
