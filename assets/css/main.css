@@ -7,7 +7,7 @@
 :root {
   --bg-color: #FDFCFA;
   --bg-color2: #F5F5F5;
-  --accent-color1: #880808;
+  --accent-color: #880808;
   --text-dark: #1B1212;
   --transition: all 0.3s ease;
 }
@@ -39,5 +39,4 @@ a:hover {
   text-align: center;
   padding: 1.7rem;
 }
-
 
